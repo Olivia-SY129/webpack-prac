@@ -62,9 +62,4 @@ module.exports = {
   devtool: 'inline-source-map',
   // mode: 'production',
   mode: 'development',
-  devServer: {
-    static: './public',
-    compress: true,
-    port: 8080,
-  },
 };

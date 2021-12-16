@@ -18,8 +18,6 @@ export default function App({ $target }) {
 
     if (pathname === '/') {
       const Home = new HomePage({ $target });
-      Home.render();
-      Home.bindEvents();
     } else if (pathname.indexOf('/search/') === 0) {
       const [, , keyword] = pathname.split('/');
       new SearchResultPage({ $target, initialState: keyword });

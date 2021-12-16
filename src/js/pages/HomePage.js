@@ -53,8 +53,8 @@ export default function HomePage({ $target }) {
       if (target.matches('.box-office *')) {
         const route = `/movies/${movieId}`;
         routeChange(route);
-      } else {
-        const route = '/movies/2';
+      } else if (target.matches('.top-ranking *')) {
+        const route = `/movies/${movieId}`;
         routeChange(route);
       }
     });
